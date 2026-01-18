@@ -2,97 +2,121 @@
 
 const config = {
   github: {
-    username: 'lucassantoss4',
+    username: 'lucassantoss4', 
   },
+  
   base: '/',
+
   projects: {
     github: {
       display: true,
-      header: 'Projetos no GitHub',
-      mode: 'automatic',
+      header: 'My GitHub Projects', // Seus projetos reais ficam aqui
+      mode: 'automatic', 
       automatic: {
         sortBy: 'stars',
-        limit: 4,
+        limit: 8,
         exclude: {
           forks: false,
           projects: [],
         },
       },
       manual: {
-        projects: [],
+        projects: [], 
       },
     },
+    
+    // --- O TRUQUE COMEÇA AQUI ---
+    // Vamos usar esta seção para imitar a área de "Skills" detalhada dele
     external: {
-      header: 'Projetos de Destaque',
+      header: 'Skills & Technologies', // Renomeamos o título para parecer Skills
       projects: [
         {
-          title: 'Automação de Controle Financeiro',
-          description: 'Desenvolvimento de uma ferramenta de automação para coleta e análise de despesas financeiras em Python, com integração de banco de dados PostgreSQL.',
-          imageUrl: 'https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg',
-          link: 'https://github.com/lucassantoss4',
+          title: 'Python Ecosystem',
+          description: 'Pandas, Numpy, Scikit-learn, PyCaret, Matplotlib, Seaborn, Plotly, Folium, BeautifulSoup, Selenium for automation and data analysis.',
+          imageUrl: '', 
+          link: '', // Deixe vazio para não parecer um link clicável
+        },
+        {
+          title: 'SQL & Databases',
+          description: 'Create, modify and retrieve data from relational database management systems (e.g. MySQL, PostgreSQL). Experience with complex queries.',
+          imageUrl: '', 
+          link: '',
+        },
+        {
+          title: 'Cloud Platforms (AWS)',
+          description: 'Worked with AWS services including S3, DynamoDB, Rekognition, API Gateway, Lambda, BigQuery and IAM permissions.',
+          imageUrl: '', 
+          link: '',
+        },
+        {
+          title: 'DevOps & Tools',
+          description: 'Familiarity with Git/GitHub for version control. Docker for containerization and creating images for models and applications.',
+          imageUrl: '', 
+          link: '',
         },
       ],
     },
   },
-  seo: {
-    title: 'Portfólio | Lucas Teixeira',
-    description: 'Estudante de Engenharia de Software & Desenvolvedor de Automações',
-    imageURL: '',
+  
+  seo: { 
+    title: 'Portfolio of Lucas Teixeira', 
+    description: 'Software Engineering Student',
+    imageURL: '' 
   },
+  
   social: {
     linkedin: 'lucas-teixeira',
-    twitter: '',
+    x: '',
     mastodon: '',
+    researchGate: '',
     facebook: '',
     instagram: '',
-    youtube: '',
-    medium: '',
-    dev: '',
-    stackoverflow: '',
+    reddit: '',
+    threads: '',
+    youtube: '', 
+    udemy: '',
+    dribbble: '',
+    behance: '',
+    medium: 'lucasteixeira',
+    dev: '', 
+    stackoverflow: '', 
+    discord: '',
+    telegram: '',
     website: '',
-    phone: '', 
-    email: 'seu-email@gmail.com',
+    phone: '',
+    email: 'lucas@example.com',
   },
+  
   resume: {
-    fileUrl: '/curriculo.pdf',
+    fileUrl: '/curriculo.pdf', 
   },
-  skills: [
-    'PYTHON (Pandas, Numpy, Selenium, BeautifulSoup)',
-    'SQL (PostgreSQL, MySQL)',
-    'NUVEM (AWS S3, Lambda, DynamoDB)',
-    'CONTROLE DE VERSÃO (Git, GitHub)',
-    'DOCKER & CONTEINERIZAÇÃO',
-    'VISUALIZAÇÃO DE DADOS (Power BI, Matplotlib)',
-    'AUTOMAÇÃO & SCRAPING',
-    'CONCEITOS DE HEALTH IT (TI em Saúde)',
-    'PIPELINES DE DEVOPS',
-  ],
+  
+  // Deixamos vazio para não duplicar informação
+  skills: [],
+  
   experiences: [
     {
       company: 'Escrevendo na Quebrada',
-      position: 'Voluntário de Inovação & Desenvolvedor Python',
-      from: 'Novembro de 2025',
-      to: 'Presente',
+      position: 'Innovation Volunteer',
+      from: 'November 2025',
+      to: 'Present',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      description: 'Liderando iniciativas de inovação tecnológica no setor social.\n• Desenvolvimento de scripts de automação para otimização de fluxos de trabalho.\n• Implementação de soluções de software utilizando Python para análise de dados internos.\n• Aplicação de metodologias ágeis (Scrum) para gestão de tecnologia.',
+      description: 'Managing and developing POCs for innovative projects using Automation and AI tools.\n' +
+                   '• Managing the development of internal tools utilizing Python scripts.\n' +
+                   '• Developed an automation solution for data entry using Selenium and Pandas.',
     },
     {
-      company: 'Grupo Elfa',
-      position: 'Estagiário de Engenharia de Software - Inovação & IA',
-      from: '2024',
-      to: 'Presente',
-      companyLink: 'https://grupoelfa.com.br/',
-      description: 'Atuação em projetos de Inovação e Inteligência Artificial no setor de saúde (Health IT).\n• Auxílio no desenvolvimento de ferramentas para eficiência operacional.\n• Estudo e aplicação de infraestrutura em nuvem (AWS) e bancos de dados relacionais.',
+      company: 'Em Busca de Oportunidade',
+      position: 'Software Engineering Student',
+      from: '2023',
+      to: 'Present',
+      companyLink: '',
+      description: 'Focusing on Cloud Computing (AWS), DevOps practices, and Python automation projects.',
     },
   ],
-  certifications: [
-    {
-      name: 'AWS Cloud Practitioner',
-      body: 'Amazon Web Services',
-      year: '2025',
-      link: '',
-    },
-  ],
+  
+  certifications: [],
+  
   education: [
     {
       institution: 'Uniamerica - Descomplica',
@@ -101,21 +125,23 @@ const config = {
       to: '2028',
     },
   ],
-  publications: [],
+  
+  publications: [], 
+  
   blog: {
     source: 'dev',
-    username: '',
+    username: '', 
     limit: 2,
   },
+  
   googleAnalytics: {
     id: '',
   },
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
+  
+  hotjar: { id: '', snippetVersion: 6 },
+  
   themeConfig: {
-    defaultTheme: 'procyon',
+    defaultTheme: 'procyon', 
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
@@ -124,17 +150,15 @@ const config = {
       'dark',
       'procyon',
     ],
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
   },
-  footer: `Feito com ❤️ por Lucas Teixeira`,
+
+  footer: `Made with <a 
+      class="text-primary" href="https://github.com/arifszn/gitprofile"
+      target="_blank"
+      rel="noreferrer"
+    >GitProfile</a>`,
+
+  enablePWA: true,
 };
 
 export default config;
