@@ -37,7 +37,6 @@ const config = {
   },
   
   social: {
-    // CORREÇÃO: Coloquei apenas seu usuário, senão o botão quebra
     linkedin: 'lucas-t-santos', 
     medium: '', 
     dev: '', 
@@ -48,7 +47,6 @@ const config = {
     fileUrl: '/curriculoLucasTeixeira.pdf', 
   },
   
-  // SKILLS: Mantive a lista limpa (sem ícones) como você pediu
   skills: [
     // Backend & Languages
     'Python',
@@ -143,6 +141,20 @@ const config = {
       to: 'Presente',
     },
   ],
+
+  // --- NOVA SEÇÃO: PUBLICATIONS ---
+  publications: [
+    {
+      title: 'Otimização de Processos com Python e Selenium',
+      conferenceName: '', // Deixe vazio se não for conferência
+      journalName: 'Artigo Técnico (LinkedIn / Medium)',
+      authors: 'Lucas Teixeira',
+      link: 'https://linkedin.com/in/lucas-t-santos', // Coloque o link real do artigo aqui
+      description:
+        'Estudo de caso sobre como a automação de scripts reduziu em 40% o tempo operacional de tarefas administrativas no terceiro setor. Aborda o uso de bibliotecas como Pandas para manipulação de dados e Selenium para interação web.',
+    },
+    // Se tiver mais publicações, copie o bloco acima e cole aqui
+  ],
   
   blog: {
     source: 'dev',
@@ -157,19 +169,14 @@ const config = {
   hotjar: { id: '', snippetVersion: 6 },
   
   themeConfig: {
-    // VOLTEI PARA O TEMA DA FOTO (Azul escuro elegante)
     defaultTheme: 'procyon', 
-    
-    // Deixei false para você poder testar outros temas se quiser, 
-    // mas vai abrir sempre no procyon.
     disableSwitch: false, 
-    
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'procyon', // Tema principal
-      'dracula', // Tema de código (opção secundária)
-      'dark',    // Tema neutro
+      'procyon', 
+      'dracula', 
+      'dark',    
     ],
   },
 
