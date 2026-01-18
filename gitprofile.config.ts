@@ -121,7 +121,7 @@ const config = {
     id: '',
   },
   
-  hotjar: { id: '', snippetVersion: 6 },
+  hotjar: { id: '', snippetVersion: 4 },
   
   themeConfig: {
     defaultTheme: 'dracula', // TEMA "DEV RAIZ": Fundo escuro, cores de sintaxe.
