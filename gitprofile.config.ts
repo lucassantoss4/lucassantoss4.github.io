@@ -2,95 +2,69 @@
 
 const config = {
   github: {
-    username: 'lucassantoss4', // Seu usuário correto
+    username: 'lucassantoss4', 
   },
-  
-  base: '/', // Configuração para site raiz
-
+  base: '/',
   projects: {
     github: {
       display: true,
-      header: 'Github Projects',
-      mode: 'automatic', 
+      header: 'GitHub Projects',
+      mode: 'automatic',
       automatic: {
         sortBy: 'stars',
-        limit: 8,
-        exclude: {
-          forks: false,
-          projects: [],
-        },
+        limit: 4, // Menos projetos automáticos para dar destaque aos manuais igual ao dele
+        exclude: { forks: false, projects: [] },
       },
       manual: {
-        projects: [], 
+        // Coloque aqui os nomes REAIS dos seus repositórios para aparecerem primeiro
+        projects: ['lucassantoss4/nome-do-seu-projeto-principal'], 
       },
     },
     external: {
-      header: 'Key Projects',
-      // Aqui você pode adicionar projetos manuais com descrição detalhada igual a dele
+      header: 'Featured Projects',
       projects: [
         {
-          title: 'Automação de Despesas Pessoais',
-          description: 'Sistema desenvolvido em Python para tracking automático de despesas financeiras, integrando planilhas e scripts de análise de dados.',
-          imageUrl: '', 
+          title: 'Automated Expense Tracker',
+          description: 'Desenvolvimento de uma ferramenta de automação para coleta e análise de despesas financeiras em Python, com integração de banco de dados PostgreSQL.',
+          imageUrl: 'https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg',
           link: 'https://github.com/lucassantoss4',
         },
-        // Você pode adicionar mais projetos manuais aqui se quiser destacar algo específico
       ],
     },
   },
-  
-  seo: { 
-    title: 'Portfolio of Lucas Teixeira', 
-    description: 'Software Engineering Student & Automation Specialist',
-    imageURL: '' 
+  seo: {
+    title: 'Portfolio | Lucas Teixeira',
+    description: 'Software Engineering Student & Automation Developer',
+    imageURL: '',
   },
-  
   social: {
-    linkedin: 'lucas-teixeira', // Substitua pelo seu usuário real do LinkedIn (parte final da URL)
+    linkedin: 'lucas-teixeira', // AJUSTE: coloque seu id real do linkedin
     x: '',
     mastodon: '',
-    researchGate: '',
     facebook: '',
     instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', 
-    udemy: '',
-    dribbble: '',
-    behance: '',
+    youtube: '',
     medium: '',
-    dev: '', 
-    stackoverflow: '', 
-    discord: '',
-    telegram: '',
+    dev: '',
+    stackoverflow: '',
     website: '',
-    phone: '',
-    email: 'lucas@example.com', // Coloque seu email real se quiser
+    phone: '', // Se quiser igual ao dele: '+55 (11) 9XXXX-XXXX'
+    email: 'contadulucas@gmail.com',
   },
-  
   resume: {
-    fileUrl: '/curriculo.pdf', // Lembre de subir o arquivo na pasta 'public'
+    fileUrl: '/CurrículoDadosIA.pdf', // Certifique-se de subir o arquivo na pasta 'public'
   },
-  
-  // AQUI ESTÁ O TRUQUE: Ele lista muitas ferramentas específicas para parecer um expert
   skills: [
-    'Python',
-    'Automation',
-    'Selenium',
-    'Pandas',
-    'AWS',
-    'Cloud Computing',
-    'PostgreSQL',
-    'Health IT',
-    'DevOps',
-    'Git',
-    'Docker',
-    'Linux',
-    'Scrum',
-    'Innovation',
+    'PYTHON (Pandas, Numpy, Selenium, BeautifulSoup)',
+    'SQL (PostgreSQL, MySQL)',
+    'CLOUD (AWS S3, Lambda, DynamoDB)',
+    'VERSION CONTROL (Git, GitHub)',
+    'DOCKER & CONTAINERIZATION',
+    'DATA VISUALIZATION (Power BI, Matplotlib)',
+    'AUTOMATION & SCRAPING',
+    'HEALTH IT CONCEPTS',
+    'DEVOPS PIPELINES',
   ],
-  
-  // AQUI A MÁGICA DO TEXTO: Fiz uma versão sua baseada na dele
   experiences: [
     {
       company: 'Escrevendo na Quebrada',
@@ -98,78 +72,49 @@ const config = {
       from: 'November 2025',
       to: 'Present',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      // Descrição rica com bullet points igual a referência
-      description: 'Responsável por iniciativas de inovação e desenvolvimento de software dentro da organização.\n' +
-                   '• Desenvolvo scripts de automação em Python para otimizar processos internos.\n' +
-                   '• Aplico conceitos de Engenharia de Software para criar soluções escaláveis.\n' +
-                   '• Colaboro em equipe utilizando metodologias ágeis para entregas contínuas.',
+      description: 'Liderando iniciativas de inovação tecnológica em ambiente de terceiro setor.\n• Desenvolvimento de scripts de automação para otimização de fluxos de trabalho.\n• Implementação de soluções de software utilizando Python para análise de dados internos.\n• Uso de metodologias ágeis (Scrum) para gestão de voluntariado e tecnologia.',
     },
     {
-      company: 'Em Busca de Oportunidade',
-      position: 'Software Engineering Student',
-      from: '2023',
+      company: 'Grupo Elfa',
+      position: 'Software Engineering Intern',
+      from: '2024',
       to: 'Present',
-      companyLink: '',
-      description: 'Focado em desenvolvimento de automações, estudos aprofundados em AWS Cloud e infraestrutura de TI.\n' +
-                   '• Criando projetos práticos de manipulação de dados com Pandas e PostgreSQL.\n' +
-                   '• Estudando arquitetura de microsserviços e eficiência em DevOps.',
+      companyLink: 'https://grupoelfa.com.br/',
+      description: 'Atuação em projetos de Inovação e Inteligência Artificial no setor de saúde (Health IT).\n• Auxílio no desenvolvimento de ferramentas para eficiência operacional.\n• Estudo e aplicação de infraestrutura em nuvem (AWS) e bancos de dados relacionais.',
     },
   ],
-  
   certifications: [
-    // Se tiver certificações, coloque aqui. O Thales usa isso para encher o perfil.
-    /*
     {
-      name: 'AWS Cloud Practitioner (Studying)',
+      name: 'AWS Cloud Practitioner',
       body: 'Amazon Web Services',
-      year: '2026 (Planned)',
+      year: '2025',
       link: '',
     },
-    */
+    {
+      name: 'Python for Data Science',
+      body: 'Alura / Coursera',
+      year: '2024',
+      link: '',
+    },
   ],
-  
   education: [
     {
       institution: 'Uniamerica - Descomplica',
-      degree: 'Bacharelado em Engenharia de Software',
+      degree: 'Bachelor in Software Engineering',
       from: '2024',
       to: '2028',
     },
   ],
-  
-  publications: [], 
-  
-  blog: {
-    source: 'dev',
-    username: '', 
-    limit: 2,
-  },
-  
-  googleAnalytics: {
-    id: '',
-  },
-  
-  hotjar: { id: '', snippetVersion: 6 },
-  
+  // O Thales não tem publicações, mas usa essa área para "Keywords" ou outros detalhes
+  publications: [],
   themeConfig: {
-    defaultTheme: 'procyon', // O tema escuro elegante
+    defaultTheme: 'procyon',
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: [
-      'light',
-      'dark',
-      'procyon',
-    ],
+    themes: ['light', 'dark', 'procyon'],
   },
-
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a>`,
-
-  enablePWA: true,
+  footer: `Made with ❤️ by Lucas Teixeira`,
 };
 
 export default config;
