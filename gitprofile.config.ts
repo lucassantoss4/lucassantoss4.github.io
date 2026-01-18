@@ -99,8 +99,8 @@ const config = {
       year: 'Em andamento',
       link: '',
     },
-    */
   ],
+  
   education: [
     {
       institution: 'Uniamerica - Descomplica',
