@@ -10,7 +10,7 @@ const config = {
   projects: {
     github: {
       display: true,
-      header: 'Projetos em Destaque',
+      header: 'Repositórios em Destaque',
       mode: 'automatic', 
       automatic: {
         sortBy: 'stars',
@@ -24,9 +24,30 @@ const config = {
         projects: [], 
       },
     },
+    
+    // AQUI ESTÃO OS NOVOS PROJETOS ORGANIZADOS
     external: {
-      header: 'Projetos de Arquitetura',
-      projects: [],
+      header: 'Projetos de Arquitetura & Automação',
+      projects: [
+        {
+          title: 'Innovation Projects Manager (CRUD)',
+          description: 'Sistema de gestão de projetos desenvolvido para substituir planilhas complexas. Centraliza dados em banco SQL, eliminando redundância e permitindo geração de dashboards em tempo real.',
+          imageUrl: '', 
+          link: 'https://github.com/lucassantoss4/innovation-projects-manager',
+        },
+        {
+          title: 'Corporate Automation Suite (RPA)',
+          description: 'Conjunto de algoritmos Python para automação de ciclo de vida de usuários (Onboarding/Offboarding) e Web Scraping para monitoramento de editais de inovação.',
+          imageUrl: '', 
+          link: 'https://github.com/lucassantoss4/corporate-automation-suite',
+        },
+        {
+          title: 'Teams Comms Orchestrator',
+          description: 'Solução Low-code com Power Automate para orquestrar notificações críticas em massa via Microsoft Teams. Aumentou a taxa de leitura e reduziu ruído de e-mails.',
+          imageUrl: '', 
+          link: 'https://github.com/lucassantoss4/teams-comms-orchestrator',
+        },
+      ],
     },
   },
   
@@ -142,18 +163,26 @@ const config = {
     },
   ],
 
-  // --- NOVA SEÇÃO: PUBLICATIONS ---
+  // AQUI ESTÃO AS PUBLICAÇÕES ATUALIZADAS
   publications: [
     {
-      title: 'Otimização de Processos com Python e Selenium',
-      conferenceName: '', // Deixe vazio se não for conferência
-      journalName: 'Artigo Técnico (LinkedIn / Medium)',
+      title: 'Na minha máquina funciona: Expondo seu Localhost',
+      conferenceName: '', 
+      journalName: 'Artigo Técnico',
       authors: 'Lucas Teixeira',
-      link: 'https://linkedin.com/in/lucas-t-santos', // Coloque o link real do artigo aqui
+      link: 'https://linkedin.com/in/lucas-t-santos', 
       description:
-        'Estudo de caso sobre como a automação de scripts reduziu em 40% o tempo operacional de tarefas administrativas no terceiro setor. Aborda o uso de bibliotecas como Pandas para manipulação de dados e Selenium para interação web.',
+        'Guia sobre como conectar seu ambiente local (localhost) com o mundo real usando Túneis, essencial para testar Webhooks e apresentar projetos. Comparativo técnico entre ngrok (debug), Cloudflare Tunnel (domínios fixos e gratuito) e Localtunnel (open source).',
     },
-    // Se tiver mais publicações, copie o bloco acima e cole aqui
+    {
+      title: 'Otimização de Processos com Python e Selenium',
+      conferenceName: '', 
+      journalName: 'Estudo de Caso',
+      authors: 'Lucas Teixeira',
+      link: 'https://linkedin.com/in/lucas-t-santos', 
+      description:
+        'Análise de como a automação de scripts reduziu em 40% o tempo operacional de tarefas administrativas. Aborda o uso de bibliotecas como Pandas para manipulação de dados e Selenium para interação web em ambientes corporativos.',
+    },
   ],
   
   blog: {
