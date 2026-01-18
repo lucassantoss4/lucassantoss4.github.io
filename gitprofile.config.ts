@@ -8,14 +8,13 @@ const config = {
   base: '/',
 
   projects: {
-    // Vamos "esconder" a seção automática por enquanto para destacar os fixos abaixo
     github: {
-      display: false, 
-      header: 'Github Projects',
+      display: true,
+      header: 'Repositórios em Destaque',
       mode: 'automatic', 
       automatic: {
         sortBy: 'stars',
-        limit: 8,
+        limit: 4, // AJUSTADO: Mostra apenas os 4 principais
         exclude: {
           forks: false,
           projects: [],
@@ -25,47 +24,20 @@ const config = {
         projects: [], 
       },
     },
-    
-    // AQUI ESTÃO OS 4 PROJETOS FIXOS QUE CRIEI PARA VOCÊ
     external: {
-      header: 'Projetos em Destaque (Backend & Automação)',
-      projects: [
-        {
-          title: 'Financial Data Automator',
-          description: 'Sistema de ETL (Extração, Transformação e Carga) desenvolvido em Python. Processa extratos bancários brutos (CSV/PDF), categoriza despesas automaticamente usando Pandas e sincroniza com dashboards no Google Sheets via API.',
-          imageUrl: '', // Backend não precisa de imagem, o ícone de pasta fica mais técnico
-          link: 'https://github.com/lucassantoss4', // Link para seu perfil ou repo futuro
-        },
-        {
-          title: 'HealthTech Cloud Pipeline',
-          description: 'Arquitetura Serverless na AWS para processamento de dados de saúde. Utiliza AWS Lambda para higienização de dados, S3 para armazenamento seguro (Data Lake) e triggers automáticos para análise de logs.',
-          imageUrl: '', 
-          link: 'https://github.com/lucassantoss4',
-        },
-        {
-          title: 'NGO Management Bot',
-          description: 'Bot de automação desenvolvido para otimizar processos da ONG "Escrevendo na Quebrada". Integração com APIs de mensagens para gestão de voluntários e automação de tarefas administrativas repetitivas.',
-          imageUrl: '', 
-          link: 'https://github.com/lucassantoss4',
-        },
-        {
-          title: 'Secure API with PostgreSQL',
-          description: 'API RESTful robusta construída com foco em segurança e performance. Implementa autenticação JWT, integração com banco de dados PostgreSQL via Docker Container e documentação automática.',
-          imageUrl: '', 
-          link: 'https://github.com/lucassantoss4',
-        },
-      ],
+      header: 'Projetos de Arquitetura & Automação',
+      projects: [],
     },
   },
   
   seo: { 
     title: 'Portfólio de Lucas Teixeira', 
-    description: 'Desenvolvedor Backend & Engenharia de Dados',
+    description: 'Engenharia de Software, Automação e Cloud Computing.',
     imageURL: '' 
   },
   
   social: {
-    linkedin: 'lucas-teixeira', 
+    linkedin: 'lucas-teixeira',
     medium: '', 
     dev: '', 
     email: 'lucas.teixeira@example.com',
@@ -75,21 +47,21 @@ const config = {
     fileUrl: '/curriculo.pdf', 
   },
   
-  // Lista de Skills Otimizada para ATS (Robôs de Recrutamento)
+  // AJUSTADO: Ícones visuais (Emojis) para cada tecnologia
   skills: [
-    'Python',
-    'Automation',
-    'ETL Processes',
-    'AWS Lambda',
-    'AWS S3',
-    'PostgreSQL',
-    'SQL',
-    'Docker',
-    'Git Flow',
-    'Linux',
-    'Pandas',
-    'Selenium',
-    'APIs REST',
+    '🐍 Python',
+    '🤖 Automation',
+    '☁️ AWS',
+    '🐘 PostgreSQL',
+    '🗄️ SQL',
+    '🐳 Docker',
+    '🐧 Linux',
+    '🐙 Git / GitHub',
+    '🚀 CI/CD',
+    '🐼 Pandas',
+    '🕸️ Selenium',
+    '📊 Data Analysis',
+    '🔄 Scrum',
   ],
   
   experiences: [
@@ -100,9 +72,9 @@ const config = {
       to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
       description: 
-        'Atuação focada em automação de processos e inteligência de dados.\n' +
-        '• Desenvolvimento de scripts Python para automação de tarefas manuais.\n' +
-        '• Implementação de fluxos de dados escaláveis para gestão interna.',
+        'Desenvolvimento de automações para otimização de processos internos.\n' +
+        '• Criação de scripts Python para análise de dados e relatórios.\n' +
+        '• Implementação de soluções de IA para suporte administrativo.',
     },
     {
       company: 'Em Busca de Oportunidade',
@@ -111,11 +83,13 @@ const config = {
       to: 'Presente',
       companyLink: '',
       description: 
-        'Formação acadêmica com ênfase em arquitetura de backend, cloud computing (AWS) e bancos de dados.',
+        'Foco acadêmico em arquitetura de software, infraestrutura em nuvem (AWS) e bancos de dados relacionais.',
     },
   ],
   
-  certifications: [],
+  certifications: [
+    // Espaço reservado para futuras certificações AWS
+  ],
   
   education: [
     {
@@ -145,10 +119,12 @@ const config = {
     displayAvatarRing: true,
     themes: [
       'dracula',
+      'procyon',
+      'dark',
     ],
   },
 
-  footer: `Desenvolvido por Lucas Teixeira`,
+  footer: `Desenvolvido por Lucas Teixeira`, 
 
   enablePWA: true,
 };
