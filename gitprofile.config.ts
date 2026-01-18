@@ -102,14 +102,11 @@ const config = {
       to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
       description: 
-        'Liderança técnica em projetos de impacto social focados em automação e eficiência.\n' +
-        '• Desenvolvimento de bots e scripts em Python para automatizar a coleta de dados, reduzindo o tempo manual em 40%.\n' +
-        '• Implementação de pipelines de dados para relatórios administrativos automáticos.\n' +
-        '• Mentoria técnica e disseminação de cultura ágil dentro da equipe voluntária.',
+        'Atuo no desenvolvimento de soluções tecnológicas focadas em eficiência operacional e transformação digital para a área de Inovação Corporativa. Minha responsabilidade é substituir processos manuais por sistemas escaláveis, garantindo integridade de dados e agilidade na tomada de decisão.',
     },
     {
-      company: 'Em Busca de Oportunidade',
-      position: 'Estudante de Engenharia de Software',
+      company: 'Grupo Elfa',
+      position: 'Engenharia de Software - Inovação & IA',
       from: '2023',
       to: 'Presente',
       companyLink: '',
