@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'Lucas-Teixeira', // Seu usuário
+    username: 'lucassantoss4', // Seu usuário
   },
   
   /**
