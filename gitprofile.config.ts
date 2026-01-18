@@ -1,15 +1,11 @@
 // gitprofile.config.ts
 
-const CONFIG = {
+const config = {
   github: {
-    username: 'lucassantoss4', // Seu usuário
+    username: 'lucassantoss4', // Seu usuário correto
   },
   
-  /**
-   * IMPORTANTE: Como seu repo é Lucas-Teixeira.github.io, 
-   * a base deve ser apenas '/'
-   */
-  base: '/',
+  base: '/', // Configuração para site raiz
 
   projects: {
     github: {
@@ -25,23 +21,32 @@ const CONFIG = {
         },
       },
       manual: {
-        // Limpei os projetos do criador original
         projects: [], 
       },
     },
     external: {
-      header: 'My Projects',
-      // Se não tiver projetos externos agora, deixe a lista vazia para ocultar a seção
-      projects: [],
+      header: 'Key Projects',
+      // Aqui você pode adicionar projetos manuais com descrição detalhada igual a dele
+      projects: [
+        {
+          title: 'Automação de Despesas Pessoais',
+          description: 'Sistema desenvolvido em Python para tracking automático de despesas financeiras, integrando planilhas e scripts de análise de dados.',
+          imageUrl: '', 
+          link: 'https://github.com/lucassantoss4',
+        },
+        // Você pode adicionar mais projetos manuais aqui se quiser destacar algo específico
+      ],
     },
   },
+  
   seo: { 
     title: 'Portfolio of Lucas Teixeira', 
-    description: 'Software Engineering Student & Innovation Enthusiast',
+    description: 'Software Engineering Student & Automation Specialist',
     imageURL: '' 
   },
+  
   social: {
-    linkedin: 'https://www.linkedin.com/in/lucas-t-santos/', // Preencha aqui seu linkedin, ex: 'lucas-teixeira'
+    linkedin: 'lucas-teixeira', // Substitua pelo seu usuário real do LinkedIn (parte final da URL)
     x: '',
     mastodon: '',
     researchGate: '',
@@ -49,7 +54,7 @@ const CONFIG = {
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '',
+    youtube: '', 
     udemy: '',
     dribbble: '',
     behance: '',
@@ -60,69 +65,101 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '',
-    email: '', // Coloque seu email se quiser
+    email: 'lucas@example.com', // Coloque seu email real se quiser
   },
+  
   resume: {
-    // Quando tiver seu PDF, coloque na pasta 'public' e mude aqui para '/seu-curriculo.pdf'
-    fileUrl: '', 
+    fileUrl: '/curriculo.pdf', // Lembre de subir o arquivo na pasta 'public'
   },
+  
+  // AQUI ESTÁ O TRUQUE: Ele lista muitas ferramentas específicas para parecer um expert
   skills: [
     'Python',
+    'Automation',
+    'Selenium',
+    'Pandas',
     'AWS',
+    'Cloud Computing',
     'PostgreSQL',
+    'Health IT',
     'DevOps',
     'Git',
     'Docker',
     'Linux',
+    'Scrum',
+    'Innovation',
   ],
+  
+  // AQUI A MÁGICA DO TEXTO: Fiz uma versão sua baseada na dele
   experiences: [
     {
       company: 'Escrevendo na Quebrada',
-      position: 'Voluntário de Inovação - Desenvolvedor Python | IA',
+      position: 'Innovation Volunteer & Python Developer',
       from: 'November 2025',
       to: 'Present',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
+      // Descrição rica com bullet points igual a referência
+      description: 'Responsável por iniciativas de inovação e desenvolvimento de software dentro da organização.\n' +
+                   '• Desenvolvo scripts de automação em Python para otimizar processos internos.\n' +
+                   '• Aplico conceitos de Engenharia de Software para criar soluções escaláveis.\n' +
+                   '• Colaboro em equipe utilizando metodologias ágeis para entregas contínuas.',
     },
     {
-      company: 'Grupo Elfa',
-      position: 'Engenharia de Software - Inovação & IA',
-      from: '2024',
+      company: 'Em Busca de Oportunidade',
+      position: 'Software Engineering Student',
+      from: '2023',
       to: 'Present',
-      companyLink: 'https://grupoelfa.com.br/',
+      companyLink: '',
+      description: 'Focado em desenvolvimento de automações, estudos aprofundados em AWS Cloud e infraestrutura de TI.\n' +
+                   '• Criando projetos práticos de manipulação de dados com Pandas e PostgreSQL.\n' +
+                   '• Estudando arquitetura de microsserviços e eficiência em DevOps.',
     },
   ],
-  // Limpei as seções abaixo para não aparecer "Lorem Ipsum" no seu site
-  certifications: [],
+  
+  certifications: [
+    // Se tiver certificações, coloque aqui. O Thales usa isso para encher o perfil.
+    /*
+    {
+      name: 'AWS Cloud Practitioner (Studying)',
+      body: 'Amazon Web Services',
+      year: '2026 (Planned)',
+      link: '',
+    },
+    */
+  ],
+  
   education: [
     {
       institution: 'Uniamerica - Descomplica',
-      degree: 'Bacharel - Engenharia de Software',
+      degree: 'Bacharelado em Engenharia de Software',
       from: '2024',
       to: '2028',
     },
   ],
+  
   publications: [], 
+  
   blog: {
     source: 'dev',
-    username: '', // Deixei vazio para não puxar posts de outra pessoa
+    username: '', 
     limit: 2,
   },
+  
   googleAnalytics: {
     id: '',
   },
+  
   hotjar: { id: '', snippetVersion: 6 },
   
   themeConfig: {
-    // Mudei para o tema escuro que você queria
-    defaultTheme: 'procyon',
-
+    defaultTheme: 'procyon', // O tema escuro elegante
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
       'light',
       'dark',
-      'procyon', // Este é o tema da foto
+      'procyon',
     ],
   },
 
@@ -135,4 +172,4 @@ const CONFIG = {
   enablePWA: true,
 };
 
-export default CONFIG;
+export default config;
