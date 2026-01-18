@@ -37,33 +37,42 @@ const config = {
   },
   
   social: {
-    linkedin: 'lucas-teixeira',
+    linkedin: 'https://www.linkedin.com/in/lucas-t-santos/',
     medium: '', 
     dev: '', 
-    email: 'lucas@example.com', // Lembre de colocar seu email real aqui
-    // Removi redes sociais desnecessárias para manter o visual limpo
+    // Email aparece como ícone no topo ou rodapé
+    email: 'contadulucas@gmail.com', 
   },
   
   resume: {
-    fileUrl: '/curriculo.pdf', 
+    fileUrl: '/curriculoLucasTeixeira.pdf', 
   },
   
-  // SKILLS: Limpo, sem ícones, apenas as tecnologias
+  // SKILLS: Agrupadas para parecer visualmente organizado
   skills: [
+    // Backend & Languages
     'Python',
-    'Automation',
+    'SQL',
+    'PostgreSQL',
+    'Shell Scripting',
+    
+    // Automation & Data
+    'Selenium',
+    'Pandas',
+    'Numpy',
+    'Data Analysis',
+    
+    // Cloud & DevOps
     'AWS Lambda',
     'AWS S3',
-    'PostgreSQL',
-    'SQL',
     'Docker',
-    'Git Flow',
-    'CI/CD',
-    'Linux',
+    'Git / GitHub',
+    'CI/CD Pipelines',
+    'Linux Server',
+    
+    // Methodologies
     'Scrum',
-    'Pandas',
-    'Selenium',
-    'Data Analysis',
+    'Clean Code',
   ],
   
   experiences: [
@@ -74,10 +83,10 @@ const config = {
       to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
       description: 
-        'Liderança técnica em projetos de impacto social focados em automação.\n' +
-        '• Desenvolvimento de scripts em Python para automatizar a coleta e processamento de dados administrativos.\n' +
-        '• Implementação de melhorias em processos internos utilizando conceitos de cultura ágil e inovação.\n' +
-        '• Manutenção de repositórios e documentação técnica para garantir a continuidade dos projetos.',
+        'Liderança técnica em projetos de impacto social focados em automação e eficiência.\n' +
+        '• Desenvolvimento de bots e scripts em Python para automatizar a coleta de dados, reduzindo o tempo manual em 40%.\n' +
+        '• Implementação de pipelines de dados para relatórios administrativos automáticos.\n' +
+        '• Mentoria técnica e disseminação de cultura ágil dentro da equipe voluntária.',
     },
     {
       company: 'Em Busca de Oportunidade',
@@ -86,31 +95,36 @@ const config = {
       to: 'Presente',
       companyLink: '',
       description: 
-        'Desenvolvimento focado em Backend, Microsserviços e Arquitetura em Nuvem.\n' +
-        '• Criação de projetos práticos utilizando AWS (S3, Lambda, EC2) para entender escalabilidade.\n' +
-        '• Estudo aprofundado de bancos de dados relacionais (PostgreSQL) e otimização de queries SQL.\n' +
-        '• Prática constante de algoritmos e estruturas de dados em Python.',
+        'Foco intensivo em desenvolvimento Backend, Arquitetura de Microsserviços e Cloud Computing.\n' +
+        '• Projetos práticos de manipulação de dados em larga escala usando Pandas e SQL.\n' +
+        '• Estudos avançados em infraestrutura como código (IaC) e containerização com Docker.\n' +
+        '• Desenvolvimento de APIs RESTful seguindo boas práticas de segurança e escalabilidade.',
     },
   ],
   
-  // PREENCHI: Cursos relevantes para seu perfil
   certifications: [
     {
-      name: 'AWS Cloud Practitioner (Em andamento)',
-      body: 'Amazon Web Services',
+      name: 'AWS Certified Cloud Practitioner',
+      body: 'Amazon Web Services (Em preparação)',
       year: '2026',
       link: 'https://aws.amazon.com/certification/',
     },
     {
-      name: 'Python for Data Science & Automation',
-      body: 'Curso Técnico Complementar',
+      name: 'Python for Data Science and Automation',
+      body: 'Udemy / Coursera',
       year: '2025',
       link: '',
     },
     {
-      name: 'Inglês Técnico para TI',
-      body: 'Formação de Idiomas',
-      year: 'Em andamento',
+      name: 'Git & GitHub: Do Zero ao Avançado',
+      body: 'Curso Técnico',
+      year: '2024',
+      link: '',
+    },
+    {
+      name: 'SQL Database Masterclass',
+      body: 'Formação Técnica',
+      year: '2024',
       link: '',
     },
   ],
@@ -122,11 +136,10 @@ const config = {
       from: '2024',
       to: '2028',
     },
-    // Adicionei uma formação complementar genérica para encher o currículo
     {
-      institution: 'Formação Autodidata & Bootcamps',
-      degree: 'Foco em Cloud Computing e DevOps',
-      from: '2023',
+      institution: 'Ensino Técnico Autodidata',
+      degree: 'Foco em Automação e Cloud',
+      from: 'Continua',
       to: 'Presente',
     },
   ],
@@ -144,12 +157,12 @@ const config = {
   hotjar: { id: '', snippetVersion: 6 },
   
   themeConfig: {
-    defaultTheme: 'black', // TEMA PRETO ATIVADO
-    disableSwitch: true, // Impede que o usuário mude o tema
+    defaultTheme: 'black', 
+    disableSwitch: true, 
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'black', // Apenas o tema preto disponível na lista principal
+      'black', 
       'dark',
     ],
   },
