@@ -5,6 +5,7 @@ const CONFIG = {
     username: 'Lucas-Teixeira', // Your GitHub org/user name. (This is the only required config)
   },
   /**
+  
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
@@ -79,37 +80,30 @@ const CONFIG = {
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
-  ],
+  'Python',
+  'AWS',
+  'PostgreSQL',
+  'DevOps',
+  'Git',
+  'Docker',
+  'Linux',
+],
   experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
+  {
+    company: 'Escrevendo na Quebrada',
+    position: 'Voluntário de Inovação - Desenvolvedor Python | IA',
+    from: 'November 2025',
+    to: 'Present',
+    companyLink: 'https://www.escrevendonaquebrada.org.br/', 
+  },
+  {
+    company: 'Grupo ELfa',
+    position: 'Engenharia de Software - Inovação & IA',
+    from: '2024', // Coloque a data real
+    to: 'Present',
+    companyLink: 'https://grupoelfa.com.br/',
+  },
+],
   certifications: [
     {
       name: 'Lorem ipsum',
@@ -118,20 +112,14 @@ const CONFIG = {
       link: 'https://example.com',
     },
   ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
+  education: [
+  {
+    institution: 'Uniamerica - Descomplica',
+    degree: 'Bacharel - Engenharia de Software',
+    from: '2024', // Ano de início
+    to: '2028', // Previsão de fim
+  },
+],
   publications: [
     {
       title: 'Publication Title',
