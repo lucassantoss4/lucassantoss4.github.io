@@ -37,10 +37,10 @@ const config = {
   },
   
   social: {
-    linkedin: 'https://www.linkedin.com/in/lucas-t-santos/',
+    // CORREÇÃO: Coloquei apenas seu usuário, senão o botão quebra
+    linkedin: 'lucas-t-santos', 
     medium: '', 
     dev: '', 
-    // Email aparece como ícone no topo ou rodapé
     email: 'contadulucas@gmail.com', 
   },
   
@@ -48,7 +48,7 @@ const config = {
     fileUrl: '/curriculoLucasTeixeira.pdf', 
   },
   
-  // SKILLS: Agrupadas para parecer visualmente organizado
+  // SKILLS: Mantive a lista limpa (sem ícones) como você pediu
   skills: [
     // Backend & Languages
     'Python',
@@ -157,13 +157,19 @@ const config = {
   hotjar: { id: '', snippetVersion: 6 },
   
   themeConfig: {
-    defaultTheme: 'black', 
-    disableSwitch: true, 
+    // VOLTEI PARA O TEMA DA FOTO (Azul escuro elegante)
+    defaultTheme: 'procyon', 
+    
+    // Deixei false para você poder testar outros temas se quiser, 
+    // mas vai abrir sempre no procyon.
+    disableSwitch: false, 
+    
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'black', 
-      'dark',
+      'procyon', // Tema principal
+      'dracula', // Tema de código (opção secundária)
+      'dark',    // Tema neutro
     ],
   },
 
