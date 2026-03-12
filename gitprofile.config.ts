@@ -75,7 +75,7 @@ const config = {
   },
   
   resume: {
-    fileUrl: '/CV_Lucas_Santos_SWE.pdf', // Sugiro renomear seu arquivo PDF na pasta public para este nome
+    fileUrl: '/CV_Lucas_Santos_SWE_Google.pdf', // Sugiro renomear seu arquivo PDF na pasta public para este nome
   },
   
   skills: [
