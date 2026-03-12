@@ -9,7 +9,7 @@ const config = {
 
   projects: {
     github: {
-      display: false, // <-- MUDEI AQUI: Isso desliga a seção "Repositórios em Destaque"
+      display: false,
       header: 'Repositórios em Destaque',
       mode: 'manual', 
       automatic: {
@@ -31,8 +31,14 @@ const config = {
     },
     
     external: {
-      header: 'Projetos de Arquitetura & Automação',
+      header: 'Projetos de Engenharia & Inteligência Artificial',
       projects: [
+        {
+          title: 'Predictive AI Inventory Optimizer',
+          description: 'Motor de machine learning construído com Scikit-Learn e Pandas para prever demanda, otimizando estoques e integrando previsões diretamente ao ERP via APIs REST.',
+          imageUrl: '', 
+          link: 'https://github.com/lucassantoss4/seu-repositorio-aqui', // Lembre-se de colocar o link real aqui
+        },
         {
           title: 'DevRadar (Market Intelligence Platform)',
           description: 'Plataforma de monitoramento automatizado de editais e eventos usando OCR (docling) e Web Scraping (crawl4ai). Arquitetura backend baseada em Flask, orquestrada via Kestra e 100% conteinerizada com Docker.',
@@ -46,16 +52,10 @@ const config = {
           link: 'https://github.com/lucassantoss4/innovation-projects-manager',
         },
         {
-          title: 'Corporate Automation Suite (RPA)',
-          description: 'Conjunto de algoritmos Python para automação de ciclo de vida de usuários (Onboarding/Offboarding) e Web Scraping para monitoramento de editais de inovação.',
+          title: 'Corporate Automation Suite (Python)',
+          description: 'Conjunto de algoritmos Python para automação de ciclo de vida de usuários (Onboarding/Offboarding) integrados a sistemas corporativos.',
           imageUrl: '', 
           link: 'https://github.com/lucassantoss4/corporate-automation-suite',
-        },
-        {
-          title: 'Teams Comms Orchestrator',
-          description: 'Solução Low-code com Power Automate para orquestrar notificações críticas em massa via Microsoft Teams. Aumentou a taxa de leitura e reduziu ruído de e-mails.',
-          imageUrl: '', 
-          link: 'https://github.com/lucassantoss4/teams-comms-orchestrator',
         },
       ],
     },
@@ -63,7 +63,7 @@ const config = {
   
   seo: { 
     title: 'Portfólio de Lucas Teixeira', 
-    description: 'Engenheiro de Software em formação com ênfase em Backend, Cloud Computing e Automação (Python/AWS).',
+    description: 'Engenheiro de Software em formação com ênfase em Backend, Inteligência Artificial e Sistemas Escaláveis.',
     imageURL: '' 
   },
   
@@ -75,37 +75,35 @@ const config = {
   },
   
   resume: {
-    fileUrl: '/CV_python.pdf', 
+    fileUrl: '/CV_Lucas_Santos_SWE.pdf', // Sugiro renomear seu arquivo PDF na pasta public para este nome
   },
   
   skills: [
     'Python',
+    'Java',
     'Flask / FastAPI',
+    'REST APIs',
     'SQL',
     'PostgreSQL',
-    'Shell Scripting',
-    'Selenium / Playwright',
+    'Machine Learning',
+    'Scikit-Learn',
     'Pandas',
     'Numpy',
-    'Data Analysis',
-    'AWS Lambda',
-    'AWS S3',
     'Docker',
     'Git / GitHub',
-    'CI/CD Pipelines',
-    'Linux Server',
-    'Scrum',
+    'AWS Cloud',
+    'Linux',
     'Clean Code',
   ],
   
-experiences: [
+  experiences: [
     {
       company: 'Grupo Elfa',
-      position: 'Estagiário Automação de Processos (Inovação & IA)',
+      position: 'Software Engineering Intern (Innovation & AI)',
       from: 'Julho 2024',
       to: 'Presente',
       companyLink: '',
-      description: 'Desenvolvimento de soluções para eficiência operacional e transformação digital, utilizando Python e Inteligência Artificial. Atuo na centralização de dados via APIs (eliminando planilhas), automação de onboarding/offboarding com auditoria de acessos, Web Scraping para inteligência de mercado e orquestração de comunicação corporativa via RPA.',
+      description: 'Arquitetura de soluções focadas em escalabilidade. Engenharia de motor de previsão de demanda utilizando Machine Learning, reduzindo rupturas projetadas em 30%. Construção de camadas de integração centralizadas via REST APIs e pipelines de dados automatizados.',
     },
     {
       company: 'Escrevendo na Quebrada',
@@ -113,7 +111,7 @@ experiences: [
       from: 'Setembro 2025',
       to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      description: 'Liderança técnica no desenvolvimento de soluções automatizadas, incluindo mapeamento de processos e Web Scraping de editais públicos de educação. Criação de Chatbot no WhatsApp para atendimento automatizado, integrando fluxos de conversação inteligentes.',
+      description: 'Liderança técnica no desenvolvimento de soluções escaláveis. Criação de Chatbot no WhatsApp com fluxos de conversação inteligentes para escalar o atendimento aos alunos, além do mapeamento e integração de dados de editais públicos.',
     },
     {
       company: 'Educafro',
@@ -121,7 +119,7 @@ experiences: [
       from: 'Abril 2025',
       to: 'Agosto 2025',
       companyLink: '',
-      description: 'Ensino de lógica de programação em Python. Desenvolvi uma automação interna para correção de notas, reduzindo o tempo administrativo em 50%.',
+      description: 'Ensino de fundamentos de Ciência da Computação e lógica de programação em Python para grupos diversos. Desenvolvimento de sistema interno de correção automatizada, reduzindo o tempo administrativo em 50%.',
     },
   ],
   
@@ -133,7 +131,7 @@ experiences: [
       link: 'https://aws.amazon.com/certification/',
     },
     {
-      name: 'Python for Data Science and Automation',
+      name: 'Python for Data Science and Machine Learning',
       body: 'Udemy / Coursera',
       year: '2025',
       link: '',
@@ -161,7 +159,7 @@ experiences: [
     },
     {
       institution: 'Ensino Técnico Autodidata',
-      degree: 'Foco em Automação e Cloud',
+      degree: 'Foco em Engenharia de Software e Cloud',
       from: 'Continua',
       to: 'Presente',
     },
@@ -177,12 +175,12 @@ experiences: [
       description: 'Guia sobre como conectar seu ambiente local (localhost) com o mundo real usando Túneis, essencial para testar Webhooks e apresentar projetos. Comparativo técnico entre ngrok (debug), Cloudflare Tunnel (domínios fixos e gratuito) e Localtunnel (open source).',
     },
     {
-      title: 'Otimização de Processos com Python e Selenium',
+      title: 'Otimização de Processos com Python e Integração de Sistemas',
       conferenceName: '', 
       journalName: 'Estudo de Caso',
       authors: 'Lucas Teixeira',
       link: 'https://linkedin.com/in/lucas-t-santos', 
-      description: 'Análise de como a automação de scripts reduziu em 40% o tempo operacional de tarefas administrativas. Aborda o uso de bibliotecas como Pandas para manipulação de dados e Selenium para interação web em ambientes corporativos.',
+      description: 'Análise de como a engenharia de scripts reduziu em 40% o tempo operacional de tarefas administrativas. Aborda o uso de bibliotecas como Pandas para manipulação de dados e integrações web em ambientes corporativos.',
     },
   ],
   
